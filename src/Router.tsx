@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ExamplePage from "./pages/ExamplePage/ExamplePage";
+import Pokemon from "./pages/ExamplePage/Pokemon";
 
 export const router = createBrowserRouter([
   {
@@ -9,18 +10,18 @@ export const router = createBrowserRouter([
   },
   {
     path: "example",
-    element: <ExamplePage />,
+    element: < ExamplePage />,
+  },
+  {
+    path: "pokemon",
+    element: <Pokemon/>,
   },
   // {
-  //   path: "packing",
-  //   element: <PackingList />,
-  // },
-  // {
   //   path: "flights",
-  //   element: <FlightInfo />,
+  //   element: < Pokemon />,
   // },
   // {
   //   path: "sightseeing",
-  //   element: <Sightseeing />,
-      // },
+  //   element: < Pokemon />,
+  //     },
 ]);
